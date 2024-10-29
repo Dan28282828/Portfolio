@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  background-color: #2c3e50; /* Dark navy blue */
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-container .logo span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* White text for logo */
+}
+
+.nav-container .links {
+  display: flex; 
+}
+
+.nav-container .links a {
+  font-size: 1.2rem;
+  color: white; /* White links */
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550; 
+  transition: color 0.3s linear;
+}
+
+.nav-container .links a:hover {
+  color: #3498db; /* Light blue on hover */
+  border-bottom: 2px solid #3498db; /* Light blue underline */
+}
+
+.section {
+  width: 100%;  
+  height: 90vh;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-container .image {
+  width: 500px;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.main-container .image img {
+  width: 100%;
+}
+
+.main-container .content {
+  color: #2c3e50; /* Dark navy text */
+  width: 40%;
+  min-height: 100px;
+}
+
+.content h1 {
+  font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content h1 span {
+  font-weight: 700; 
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+.typing-text {
+  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+.content p {
+  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+  margin: 10px 0;
+}
+
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid #3498db; /* Light blue border */
+  border-radius: 50%;
+  color: #3498db; /* Light blue icons */
+  margin: 5px 15px 5px 0;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+
+.social-links i:hover {
+  scale: 1.3;
+  filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.5)); /* Light blue shadow */
+  background-color: #3498db; /* Light blue background on hover */
+  color: white; /* White icons on hover */
+}
+
+/* Centering and spacing styles for About, Skills, Contact */
+.section {
+  display: none; /* Hide all sections by default */
+  width: 100%;
+  height: auto; /* Allow sections to adjust height */
+  padding: 50px 20px; /* Spacing around sections */
+  text-align: center; /* Center text */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+  display: block; /* Show the active section */
+  opacity: 1; /* Fade in */
+}
+
+.about-container, .skills-container, .contact-container {
+  max-width: 800px; /* Centering container */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* About Section Styles */
+#about {
+  background-color: #eaeaea; /* Light background for contrast */
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Skills Section Styles */
+#skills {
+  background-color: #f5f5f5; /* Matching body background */
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between skill items */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill-bar {
+  height: 10px;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.html { width: 80%; background-color: #e44d26; }
+.css { width: 75%; background-color: #264de4; }
+.js { width: 70%; background-color: #f7df1e; }
+.python { width: 65%; background-color: #3776ab; }
+
+/* Contact Section Styles */
+#contact {
+  background-color: #f5f5f5; /* Matching body background */
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin: 10px 0; /* Margin for spacing */
+}
+
+
+
+/* General mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    overflow: auto; /* Allow scrolling on smaller screens */
+  }
+
+  /* Navigation adjustments */
+  .nav-container {
+    flex-direction: column; /* Stack logo and links */
+    padding: 10px;
+  }
+
+  .logo span {
+    font-size: 1.5rem; /* Smaller font for the logo */
+  }
+
+  .nav-container .links {
+    flex-direction: row; /* Keep links horizontal */
+    flex-wrap: wrap;
+    gap: 10px; /* Add spacing between links */
+  }
+
+  .nav-container .links a {
+    font-size: 1rem; /* Adjust font size of links */
+  }
+
+  /* Main container adjustments */
+  .main-container {
+    flex-direction: column; /* Stack image and content */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .main-container .image {
+    width: 200px; /* Smaller image */
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-container .content {
+    width: 90%; /* Full width for text content */
+  }
+
+  /* About, Skills, Projects, and Contact Section adjustments */
+  .about-container,
+  .skills-container,
+  .projects-container,
+  .contact-container {
+    max-width: 100%; /* Full width on mobile */
+    padding: 15px;
+  }
+
+  /* Skills section adjustments */
+  .skills {
+    flex-direction: column; /* Stack skill items vertically */
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  .skill-item span {
+    font-size: 1rem;
+  }
+
+  .skill-bar {
+    width: 100%; /* Full width for skill bars */
+    margin-top: 5px;
+  }
+
+  /* Social links adjustments */
+  .social-links i {
+    width: 2rem; /* Smaller icons */
+    height: 2rem;
+    font-size: 1rem;
+  }
+}

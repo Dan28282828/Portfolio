@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link rel="stylesheet" href="style.css"> 
+  <title>Portfolio</title> 
+</head> 
+<body> 
+  <nav> 
+    <div class="nav-container"> 
+      <div class="logo">
+        <span>Dan Dainiel S. Perez</span>
+      </div> 
+      <div class="links"> 
+        <div class="link" data-section="home"><a href="#home">Home</a></div> 
+        <div class="link" data-section="about"><a href="#about">About</a></div> 
+        <div class="link" data-section="skills"><a href="#skills">Skills</a></div> 
+        <div class="link" data-section="projects"><a href="#projects">Projects</a></div> <!-- New Projects Link -->
+        <div class="link" data-section="contact"><a href="#contact">Contact</a></div> 
+      </div>
+    </div> 
+  </nav> 
+
+  <!-- Home Section -->
+  <section id="home" class="section active"> 
+    <div class="main-container"> 
+      <div class="image"> 
+        <img src="pic/bg.jpg" alt="Profile picture of Dainiel"> 
+      </div> 
+      <div class="content"> 
+        <h1>Hey, I'm <span>Dainiel</span></h1> 
+        <h2 class="typing-text">I'm a <span id="typed-text"></span></h2> 
+        <p>BSU student still learning and practicing</p> 
+        <div class="social-links"> 
+          <a href="https://github.com/dan28282828"><i class="fab fa-github"></i></a> 
+          <a href="https://www.facebook.com/SpapS.342?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a> 
+          <a href="#"><i class="fab fa-twitter"></i></a> 
+          <a href="#"><i class="fab fa-linkedin"></i></a> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>Hi there! I'm Dainiel, a college student with a passion for programming. When I'm not hitting the books, you can find me cycling through scenic trails or immersed in my favorite video games. I love exploring new technologies and constantly learning to improve my skills. Whether it's tackling a challenging coding project or competing in a gaming tournament, I strive to bring my best to everything I do. Feel free to connect with me!</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="skills-container">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="skill-item">
+          <span>HTML</span>
+          <div class="skill-bar html"></div>
+        </div>
+        <div class="skill-item">
+          <span>CSS</span>
+          <div class="skill-bar css"></div>
+        </div>
+        <div class="skill-item">
+          <span>JavaScript</span>
+          <div class="skill-bar js"></div>
+        </div>
+        <div class="skill-item">
+          <span>Python</span>
+          <div class="skill-bar python"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="projects-container">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1: Personal Portfolio Website</h3>
+        <p>This is a responsive portfolio website I built to showcase my skills and projects. It includes various sections such as About, Skills, and Contact.</p>
+        <br>
+      </div>
+      <div class="project">
+        <h3>Project 2: DJD Loaning System</h3>
+        <p>School Project</p>
+        <br>
+      </div>
+      <div class="project">
+        <h3>Project 2: Barangay Managment System</h3>
+        <p>School Project</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>Personal Email: <a href="mailto:perezdandainiel@gmail.com">perezdandainiel@gmail.com</a></p>
+      <p>School Email: <a href="mailto:22-32584@g.batstate-u.edu.ph">22-32584@g.batstate-u.edu.ph</a></p>
+      <div class="social-links"> 
+        <a href="https://github.com/dan28282828"><i class="fab fa-github"></i></a> 
+        <a href="https://www.facebook.com/SpapS.342?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a> 
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
