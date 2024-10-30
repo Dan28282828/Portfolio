@@ -18,7 +18,7 @@ links.forEach(link => {
 });
 
 const typedText = document.getElementById('typed-text');
-const textArray = ['Studenta', 'Cyclist', 'Gamer'];
+const textArray = ['Student', 'Cyclist', 'Gamer'];
 let textIndex = 0;
 let charIndex = 0;
 
